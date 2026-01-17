@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     "Personal portfolio and blog of Leonardo Ollero (MrlolDev) - Software Developer",
   metadataBase: new URL("https://mrlol.dev"),
   icons: {
-    icon: "/pfp/4.png",
-    shortcut: "/pfp/4.png",
-    apple: "/pfp/4.png",
+    icon: "/pfp/2.png",
+    shortcut: "/pfp/2.png",
+    apple: "/pfp/2.png",
   },
   keywords: [
     "Leonardo Ollero",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/pfp/4.png",
+        url: "/pfp/2.png",
         width: 800,
         height: 800,
         alt: "Leonardo Ollero",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     description:
       "Personal portfolio and blog of Leonardo Ollero (MrlolDev) - Software Developer",
     creator: "@mrloldev",
-    images: ["/pfp/4.png"],
+    images: ["/pfp/2.png"],
   },
   robots: {
     index: true,
