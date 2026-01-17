@@ -18,7 +18,7 @@ export default function RotatingText({ words, wordIndex }: RotatingTextProps) {
   }, [wordIndex]);
 
   return (
-    <div className="h-[72px] overflow-hidden">
+    <div className="h-[64px] overflow-hidden">
       <h1
         className={`text-4xl md:text-6xl font-normal text-gray-500 transition-transform duration-300 ease-in-out ${
           isTransitioning

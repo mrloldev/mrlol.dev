@@ -85,16 +85,14 @@ export default function RootLayout({
         <meta name="view-transition" content="same-origin" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden`}
         style={{
           opacity: 1,
           transition: "opacity 0.5s ease",
         }}
       >
         <ViewTransitionsProvider>
-          <main className="transition-all duration-300 ease-in-out">
-            {children}
-          </main>
+          {children}
           <Analytics />
         </ViewTransitionsProvider>
       </body>

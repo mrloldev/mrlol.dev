@@ -8,9 +8,7 @@ export default function DiagonalBackground({
   className?: string;
 }) {
   return (
-    <div
-      className={`relative min-h-screen w-full overflow-hidden bg-white ${className}`}
-    >
+    <div className={`relative min-h-screen w-full bg-white ${className || ""}`}>
       {/* Large diagonal shape #1 (left top side) */}
       <div
         className="
@@ -49,11 +47,9 @@ export default function DiagonalBackground({
             bg-gradient-to-r from-white via-[#dfdfde]/50 to-white transform rotate-[30deg] origin-bottom-left z-10
         "
       />
-      {/* Content above the background */}
-      <div className={`relative z-[1000] ${className}`}>{children}</div>
-
-      {/* Bottom gradient */}
-      <div className="absolute -bottom-10 left-0 right-0 h-80 bg-gradient-to-t from-black to-transparent z-[100] shadow-lg blur-[10rem]"></div>
+      <div className="relative z-[1000] w-full h-full flex items-center justify-center">
+        {children}
+      </div>
     </div>
   );
 }
